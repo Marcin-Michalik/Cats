@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomePage implements OnInit {
 
   constructor() { }
+  cat: string = "";
+  giveCat(){
+    this.cat="Brak"
+  };
 
   ngOnInit() {
   }

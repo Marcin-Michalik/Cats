@@ -5,5 +5,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+  <div class="top-bar centered-element">
+    <p class="text">Chcesz kotka? </p>
+    <ion-button shape="round" class="button centered-element" expand="full" (click)="giveCat()">Poproś!!!</ion-button>
+  </div>
+  <div class="content centered-element"><p class="text big">{{ cat }}</p></div>
 </ion-content>
