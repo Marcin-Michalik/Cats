@@ -30,5 +30,4 @@ export class TadePage implements OnInit {
       this.image = 'https://cataas.com'+image.url;
     });
   }
-
 }

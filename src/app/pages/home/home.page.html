@@ -5,9 +5,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="top-bar centered-element">
-    <p class="text">Chcesz kotka? </p>
-    <ion-button shape="round" class="button centered-element" expand="full" (click)="giveCat()">Poproś!!!</ion-button>
+  <div class="top-bar center-element">
+    <p class="text">Chcesz kotka?</p>
+    <ion-button
+      shape="round"
+      class="button"
+      expand="full"
+      (click)="getRandomCat()"
+      >Poproś!!!</ion-button
+    >
   </div>
-  <div class="content centered-element"><p class="text big">{{ cat }}</p></div>
+  <div class="content center-element" *ngIf="show === 1">
+    <p class="text">Autor: {{ owner }}</p>
+    <ion-img src="{{catUrl}}" alt="{{errorText}}"></ion-img>
+  </div>
+  <div class="content center-element margin-top">
+    <ion-button class="button smallButton" shape="round" expand="full" (click)="navigateToHome()">Powrót</ion-button>
+  </div>
 </ion-content>
