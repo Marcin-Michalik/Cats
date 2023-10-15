@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tu znajdziesz koty</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tu znajdziesz koty</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-img
+  src={{image}}
+  alt="kotkotkotkotkot"
+></ion-img>
+</ion-content>
+<ion-button (click)="getKittens()">deGENERATE</ion-button>
+<ion-card color="medium">
+  <ion-card-header>
+    <ion-card-title>Generator kotów</ion-card-title>
+    <ion-card-subtitle>koty w twojej okolicy</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Here's a small text description for the card content. Nothing more, nothing less.
+  </ion-card-content>
+  <ion-button (click)="goBack()">powrót</ion-button>
+</ion-card>
