@@ -12,6 +12,9 @@ export class WelcomePage implements OnInit {
   navigateToHome() {
     this.navCtrl.navigateForward('home',  { animated: false });
   }
+  navigateToTade(){
+    this.navCtrl.navigateForward('tade',  { animated: true });
+  }
   ngOnInit() {
   }
 

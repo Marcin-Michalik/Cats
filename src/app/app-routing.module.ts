@@ -13,7 +13,11 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'tade',
+    loadChildren: () => import('./tade/tade.module').then( m => m.TadePageModule)
   },
+
 ];
 @NgModule({
   imports: [
