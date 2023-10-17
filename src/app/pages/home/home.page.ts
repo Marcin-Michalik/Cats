@@ -20,7 +20,7 @@ export class HomePage implements OnInit {
     this.cataasService.getRandomCat().subscribe((catUrl: any) => {
       console.log(catUrl);
       if (catUrl && catUrl.url) {
-        this.catUrl = 'https://cataas.com' + catUrl.url;
+        this.catUrl = catUrl.url;
         this.show=1;
         if (catUrl.owner != 'null' && catUrl.owner != null) {
           this.owner = catUrl.owner;

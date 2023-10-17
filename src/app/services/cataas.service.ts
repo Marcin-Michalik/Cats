@@ -2,21 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CataasService {
-
-  private apiURL = 'https://cataas.com/';
+  private apiURL = 'https://api.waifu.pics/sfw/hug';
 
   constructor(private http: HttpClient) {}
 
-  
   getRandomCat() {
-    const url = this.apiURL + 'cat?json=true';
-    return this.http.get(url);
+    return this.http.get(this.apiURL);
   }
-
 }
-
-
-
